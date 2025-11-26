@@ -1,5 +1,5 @@
 # Esonero 1
-1. [Introduzione alla Ricerca Operativa](Formulazione%20di%20tipici%20problemi%20di%20ottimizzazione.md)
+1. [Introduzione alla Ricerca Operativa](Introduzione%20alla%20Ricerca%20Operativa.md)
     - Formulazioni, il metodo delle 5 fasi
     - Richiami di Algebra Lineare
 
