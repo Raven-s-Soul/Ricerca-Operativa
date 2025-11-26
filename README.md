@@ -1,6 +1,11 @@
 # Ricerca-Operativa
 
 >[!Note]
+>L’obiettivo principale della ricerca operativa è di <ins>supportare i processi decisionali</ins>, utilizzando al meglio i dati disponibili.
+>
+>Il corso di **Ricerca Operativa I** fornisce le conoscenze di base relative alla **formulazione e alla soluzione di problemi di ottimizzazione**.
+
+>[!tip]
 ><details>
 ><summary><h4> <a href="Esonero%20I">Esonero I</a> </h4></summary>
 >
