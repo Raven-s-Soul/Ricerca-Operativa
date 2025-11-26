@@ -54,5 +54,10 @@
 
 ***
 ### Fonti
-- Materiale forniti per il corso
+- Materiale forniti per il corso[^1]
 - Gli appunti di Colleghi (Che non verranno nominati per evitare possibili cause o disagi)
+- Eventuali soluzioni tramite[^2]
+
+***
+[^1]: E' presente solo materiale *riestrapolato da me*, perciò è potenzialmente errato e o incompleto.
+[^2]: Calcolatore **CPLEX** di soluzioni ottime dei vari problemi PL.  
