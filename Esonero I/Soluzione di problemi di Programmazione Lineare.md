@@ -88,3 +88,19 @@ Esiste il caso in cui:
 - Basta non trovarsi in casi in cui è impossbile
 
 infine possiamo scegliere un valore ammissibile per $x_1$ e altrettando dopo per $x_2$
+
+> [!important]
+> In un sistema di disequazione di $m$ disequazione in $n$ variabili:
+> - 1 tipo -> k
+> - 2 tipo -> h
+> - 3 tipo -> m - k - h
+
+Posso fondre il 1 tipo e il secondo tipo cosi a coppie: (k * h combinazioni)
+
+$$
+\begin{align*}
+\text {tipo 1} \quad  \geq \quad \text {tipo 2}  
+\end{align*}
+$$
+
+> k * h può essere più grande di m
