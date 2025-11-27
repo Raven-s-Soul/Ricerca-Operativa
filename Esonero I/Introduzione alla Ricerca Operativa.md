@@ -74,20 +74,29 @@ graph TD
 </details>
 
 
-## Problemi di formulazione
+## Notazioni
 
-### Miscelazione
-Aggiungere gli errori in difetto e in eccesso esempio
-```math
-\begin{cases}
-33 x + 70y + 80z + 100w + E1 - E2 = \text{Valore 1}\\
-33 x + 30y + 20z + 50w + E3 - E4 = \text{Valore 2}\\
-...
-\end{cases}
-```
 $$
-\begin{gather}
-\text {Dove} \quad E1 \quad \text {e} \quad E3 \quad \text {sono errori in difetto} \\
-\text {Dove} \quad E2 \quad \text {e} \quad E4 \quad \text {sono errori in eccesso}
-\end{gather}
+x =
+  \left\(\begin{matrix}
+    x_1\\
+    x_2\\
+    \vdots\\
+    x_n
+  \end{matrix}
+  \right\)
+$$
+
+$$
+x^T = \left\( x_1 \quad x_2 \quad \dots \quad x_n \right\)
+$$
+
+$$
+A =  
+    \left\(\begin{matrix}
+    x_{1 1} & \dots & x_{1  n} \\
+    \vdots & \ddots & \vdots \\
+    x_{m  1} & \dots & x_{m  n} 
+    \end{matrix}
+    \right\)
 $$
