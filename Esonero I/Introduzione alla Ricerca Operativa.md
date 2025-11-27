@@ -85,10 +85,11 @@ x =
     x_n
   \end{matrix}
   \right\)
+\text { è un vettore colonna a } n \text{ componenti}
 $$
 
 $$
-x^T = \left\( x_1 \quad x_2 \quad \dots \quad x_n \right\)
+x^T = \left\( x_1 \quad x_2 \quad \dots \quad x_n \right\) \text { è un vettore riga}
 $$
 
 $$
@@ -99,4 +100,5 @@ A =
     x_{m  1} & \dots & x_{m  n} 
     \end{matrix}
     \right\)
+\text { è una matrice} (m\times n)
 $$
