@@ -104,3 +104,39 @@ $$
 $$
 
 > k * h può essere più grande di m
+
+> infine per scegliere una soluzione ammissibile pongo un valore valido per una variabile e trovo la proiezzione del altra variabile e tutti i punti possibili a cui posso scegliere al 2nd variabile.
+
+### funzione obbiettivo
+
+$$
+\begin{gather}
+\min c^Tx = ( c_1, c_2, ... ,c_n)(x_1,x_2, ... , x_n)^T \\
+\text{Pongo per esempio} \quad c_n = 0 \quad \to \quad \text {allora} \\
+\min c^Tx = ( c_1, c_2, ... ,c_n)(x_1,x_2, ... , x_n)^T = ( c_1, c_2, ... ,c_{n-1})(x_1,x_2, ... , x_{n-1})^T
+\end{gather}
+$$
+
+>[!Note]
+>Se tutti i costi diversi da 0?
+>- Non posso proietttare per eliminazione
+
+Metodo:
+1. aggiungo nuova variabile $z$ da minimizzare
+2. nuovo vincolo $z= c^Tx$
+3. applico la proiezione per sostituzione (eliminare $z= c^Tx$)
+
+Tutte le variabili hanno costo nullo tranne $z$, proiettare tutte le variabili $x_i$ una alla volta
+
+$$
+\begin{gather}
+\min z \\
+\begin{Bmatrix}
+z \geq a \\
+z \leq b \\
+\end{Bmatrix}
+\end{gather}
+$$
+
+- Se $a \geq b$ problema inammissibile
+- se $a \leq b$ allora $z\* = a$, trovo tutti i valori di $x_i$
