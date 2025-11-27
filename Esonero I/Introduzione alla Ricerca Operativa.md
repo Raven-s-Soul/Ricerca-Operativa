@@ -107,6 +107,7 @@ f = 2x_1 + x_2 = 4 \\
 >
 >Le cordinate del punto x* lo trovo come mettendo a sistema le rette che si intersecano
 >
+>Per definizione la retta isocosto è perpendicolare($90\degree$) al gradiente.
 
 
 ## Notazioni
