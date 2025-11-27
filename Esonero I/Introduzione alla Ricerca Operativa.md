@@ -73,6 +73,8 @@ $$
 
 >[!CAUTION]
 >Se il poliedro è illimitato, bisogna fare attenzione se rispondere che il problema è inrisolubile poichè illimitato superiormente o inferiormente.
+>
+>Minimizzare è equivalente a Massimizzare con cambio di segno, e viceversa.
 
 >[!tip]
 >Utilizzo del gradiente(Derivata parziale nelle 2 componenti) nel metodo grafico:
