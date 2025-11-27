@@ -1,5 +1,34 @@
 # Introduzione alla Ricerca Operativa
 
+## Il metodo delle 5 fasi
+
+<details>
+<summary><h3> Flowchart </h3></summary>
+
+```mermaid
+graph TD
+    A[1. Identificazione del Problema] --> B(2. Raccolta Dati)
+    B --> C{3. Modello Matematico}
+    
+    subgraph D[Risoluzione]
+        C --> E[Definizione: variabili, vincoli, funzione obiettivo]
+        E --> F[4. Soluzione - Algoritmi: Simplesso, Ford-Fulkerson, metodi su grafi]
+    end
+    
+    F --> G{5. Verifica e Analisi}
+    
+    G -- Soluzione ottima e ammissibile? --> H(Attuazione / Implementazione)
+    
+    G -- Soluzione non accettabile? --> I[Ridefinizione di vincoli o obiettivo]
+    I --> C
+    
+    G -- Modello non rappresentativo? --> J[Riesame del problema]
+    J --> A
+
+```
+</details>
+
+
 >### Attributi di una buona decisione
 >- **efficace**: raggiunge lo scopo;
 >- **efficiente**: raggiunge lo scopo consumando poche risorse;
@@ -8,7 +37,7 @@
 >- **giustificabile**: può essere dimostrata razionale ad altri.
 >
 
-### Modello Matematico
+## Modello Matematico
 $$
 \begin{matrix}
 \text{Funzione Obiettivo} & \min c^Tx
@@ -44,35 +73,6 @@ $$
 
 >[!CAUTION]
 >Se il poliedro è illimitato, bisogna fare attenzione se rispondere che il problema è inrisolubile poichè illimitato superiormente o inferiormente.
-
-## Il metodo delle 5 fasi
-
-<details>
-<summary><h3> Flowchart </h3></summary>
-
-```mermaid
-graph TD
-    A[1. Identificazione del Problema] --> B(2. Raccolta Dati)
-    B --> C{3. Modello Matematico}
-    
-    subgraph D[Risoluzione]
-        C --> E[Definizione: variabili, vincoli, funzione obiettivo]
-        E --> F[4. Soluzione - Algoritmi: Simplesso, Ford-Fulkerson, metodi su grafi]
-    end
-    
-    F --> G{5. Verifica e Analisi}
-    
-    G -- Soluzione ottima e ammissibile? --> H(Attuazione / Implementazione)
-    
-    G -- Soluzione non accettabile? --> I[Ridefinizione di vincoli o obiettivo]
-    I --> C
-    
-    G -- Modello non rappresentativo? --> J[Riesame del problema]
-    J --> A
-
-```
-</details>
-
 
 ## Notazioni
 
