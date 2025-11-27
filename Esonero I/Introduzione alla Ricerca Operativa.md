@@ -75,6 +75,8 @@ $$
 >Se il poliedro è illimitato, bisogna fare attenzione se rispondere che il problema è inrisolubile poichè illimitato superiormente o inferiormente.
 >
 >Minimizzare è equivalente a Massimizzare con cambio di segno, e viceversa.
+>
+>>***Generalmente si va a destra per massimizzare e sinistra per minimizzare***
 
 >[!tip]
 >Utilizzo del gradiente(Derivata parziale nelle 2 componenti) nel metodo grafico:
@@ -104,6 +106,7 @@ f = 2x_1 + x_2 = 4 \\
 >- Tutti i punti della retta hanno lo stesso costo
 >
 >Le cordinate del punto x* lo trovo come mettendo a sistema le rette che si intersecano
+>
 
 
 ## Notazioni
