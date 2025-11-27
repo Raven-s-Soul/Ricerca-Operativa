@@ -74,6 +74,28 @@ $$
 >[!CAUTION]
 >Se il poliedro è illimitato, bisogna fare attenzione se rispondere che il problema è inrisolubile poichè illimitato superiormente o inferiormente.
 
+>Utilizzo del gradiente(Derivata parziale nelle 2 componenti) nel metodo grafico:
+>- Dove trovare la soluzione ottima
+>- Quale parte del piano c'è la soluzione
+>
+>$$
+\begin{align*}
+f = 2x_1 + x_2 = 4 \\
+\nabla f =
+\begin{bmatrix}
+\frac{\delta f(x_1,x_2)}{\delta x_1}\\
+\frac{\delta f(x_1,x_2)}{\delta x_2}
+\end{bmatrix} \\
+\nabla f =
+\begin{bmatrix}
+2\\
+1
+\end{bmatrix}
+\end{align*}
+>$$
+>
+
+
 ## Notazioni
 
 $$
