@@ -34,3 +34,5 @@ n = m & \text {poliedro si proietta in un punto} \\
 n \geq m & \text {poliedro è vuoto} \\
 \end{matrix}
  $$
+
+> Passare da un $\mathbb{R}^n$ verso un $\mathbb{R}^{n-1}$, tramita eliminazione della variabile $x_n$ ci sono 2 implicazioni
