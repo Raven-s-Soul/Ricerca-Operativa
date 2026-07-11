@@ -1,6 +1,86 @@
 # Es di Formulazione
 
-> EsoneroA1_Giugno
+>[!NOTE]
+>### Esame_Febbraio26_B 
+
+ESERCIZIO D'ESAME: FORMULAZIONE (Problema di Miscelazione) Un'azienda deve produrre conglomerati bituminosi partendo da 4 componenti in magazzino.
+
+    Inerte calcareo: Costo 28 €/ton, Resistenza 6, Flessibilità 5, Disponibilità 5000 ton
+    Inerte basaltico: Costo 35 €/ton, Resistenza 9, Flessibilità 4, Disponibilità 4000 ton
+    Fresato riciclato: Costo 18 €/ton, Resistenza 4, Flessibilità 6, Disponibilità 3500 ton
+    Legante bituminoso: Costo 90 €/ton, Resistenza 3, Flessibilità 10, Disponibilità 2000 ton
+
+Le miscele destinate alle 3 tipologie di traffico devono rispettare i seguenti vincoli:
+```
+Pista principale: 
+- Servono 4000 tonnellate. 
+- Deve avere indici di resistenza e flessibilità medi non inferiori rispettivamente a 7,5 e 5.
+
+Taxiway: servono 3000 tonnellate.
+- Deve avere indici di resistenza e flessibilità medi non inferiori rispettivamente a 6,5 e 5,5
+
+Piazzale aeromobili: servono 2500 tonnellate. 
+- Deve avere indici di resistenza e flessibilità medi non inferiori rispettivamente a 7,5 e 5.
+```
+Formulare un modello di Programmazione Lineare minimizzando il costo totale di produzione.
+
+- $i \in \\{C, B, F, L\\}$ (Componenti: Calcareo, Basaltico, Fresato, Legante)
+- $j \in \\{P, T, A\\}$ (Miscele: Pista, Taxiway, Piazzale Aeromobili)
+
+Vincoli di Non Negatività:
+- $$x_{ij} \ge 0 \quad \forall i \in \\{C,B,F,L\\}, \forall j \in \\{P,T,A\\}$$
+
+$$\min Z = 28 \sum_{j} x_{Cj} + 35 \sum_{j} x_{Bj} + 18 \sum_{j} x_{Fj} + 90 \sum_{j} x_{Lj}$$
+
+$$\min Z = 28(x_{CP} + x_{CT} + x_{CA}) + 35(x_{BP} + x_{BT} + x_{BA}) + 18(x_{FP} + x_{FT} + x_{FA}) + 90(x_{LP} + x_{LT} + x_{LA})$$
+
+$$
+\begin{gather}
+\text{Vincoli di Domanda} \\
+\begin{cases}
+x_{CP} + x_{BP} + x_{FP} + x_{LP} = 4000\\
+x_{CT} + x_{BT} + x_{FT} + x_{LT} = 3000\\
+x_{CA} + x_{BA} + x_{FA} + x_{LA} = 2500
+\end{cases}
+\end{gather}
+$$
+
+$$
+\begin{gather}
+\text{Vincoli di Disponibilità} \\
+\begin{cases}
+x_{CP} + x_{CT} + x_{CA} \le 5000\\
+x_{BP} + x_{BT} + x_{BA} \le 4000\\
+x_{FP} + x_{FT} + x_{FA} \le 3500\\
+x_{LP} + x_{LT} + x_{LA} \le 2000
+\end{cases}
+\end{gather}
+$$
+
+La formula generale per una caratteristica è: $\sum (\text{Coefficiente} \cdot x_{ij}) \ge \text{Indice Minimo} \cdot \text{Domanda}_j$
+
+Vincoli di Resistenza (Minima):
+- Pista ($\ge 7.5$ per 4000 ton):
+   - $$6x_{CP} + 9x_{BP} + 4x_{FP} + 3x_{LP} \ge 7.5 \cdot 4000 \implies 6x_{CP} + 9x_{BP} + 4x_{FP} + 3x_{LP} \ge 30000$$
+
+- Taxiway ($\ge 6.5$ per 3000 ton):
+   - $$6x_{CT} + 9x_{BT} + 4x_{FT} + 3x_{LT} \ge 6.5 \cdot 3000 \implies 6x_{CT} + 9x_{BT} + 4x_{FT} + 3x_{LT} \ge 19500$$
+
+- Piazzale ($\ge 7.5$ per 2500 ton):
+   - $$6x_{CA} + 9x_{BA} + 4x_{FA} + 3x_{LA} \ge 7.5 \cdot 2500 \implies 6x_{CA} + 9x_{BA} + 4x_{FA} + 3x_{LA} \ge 18750$$
+
+Vincoli di Flessibilità (Minima):
+- Pista ($\ge 5$ per 4000 ton):
+   - $$5x_{CP} + 4x_{BP} + 6x_{FP} + 10x_{LP} \ge 5 \cdot 4000 \implies 5x_{CP} + 4x_{BP} + 6x_{FP} + 10x_{LP} \ge 20000$$
+- Taxiway ($\ge 5.5$ per 3000 ton):
+   - $$5x_{CT} + 4x_{BT} + 6x_{FT} + 10x_{LT} \ge 5.5 \cdot 3000 \implies 5x_{CT} + 4x_{BT} + 6x_{FT} + 10x_{LT} \ge 16500$$
+- Piazzale ($\ge 5$ per 2500 ton):
+   - $$5x_{CA} + 4x_{BA} + 6x_{FA} + 10x_{LA} \ge 5 \cdot 2500 \implies 5x_{CA} + 4x_{BA} + 6x_{FA} + 10x_{LA} \ge 12500$$
+
+
+***
+>[!NOTE]
+>### EsoneroA1_Giugno
 
 ESERCIZIO D'ESAME: FORMULAZIONE (Problema di Allocazione/Produzione) Un'azienda di caffè possiede tre macchinari per la tostatura. 
 In un'ora di lavoro ogni macchina può produrre una quantità fissa di caffè, e precisamente:
