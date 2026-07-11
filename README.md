@@ -7,7 +7,7 @@
 
 >[!tip]
 ><details>
-><summary><h4> <a href="Esonero%20I">Esonero I</a> </h4></summary>
+><summary><h4> <a href="Esonero%20I">Argomenti</a> </h4></summary>
 >
 >1. [Introduzione alla Ricerca Operativa](Esonero%20I/Introduzione%20alla%20Ricerca%20Operativa.md)
 >    - Formulazioni, il metodo delle 5 fasi
@@ -20,6 +20,7 @@
 >    - Taglio ottimo
 >    - Assegnazione
 >    - Pianificazione di attività
+>    - Il Problema del Trasporto
 >
 >1. [Soluzione di problemi di Programmazione Lineare](Esonero%20I/Soluzione%20di%20problemi%20di%20Programmazione%20Lineare.md)
 >    - Geometria della Programmazione lineare
@@ -32,10 +33,6 @@
 >    - Cammino minimo
 >    - Minimo albero ricoprente
 >
-></details>
->
-><details>
-><summary><h4> <a href="Esonero%20II">Esonero II</a> </h4></summary>
 >
 > 1. [Teoria della dualità](Esonero%20II/Teoria%20della%20dualità.md)
 >    - Costruzione del problema duale
