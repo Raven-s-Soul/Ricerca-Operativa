@@ -66,7 +66,7 @@ $$
 >        - Per esempio basta prendere un punto qualsiasi non della retta e capire se soddisfa la diseguazione
 >2. Ripeto per tutti vincoli
 >    - Fino a ottenere il poliedro delle soluzioni ammissibili
->3. Trovare l'ottimo in uno dei spigoli/angoli
+>3. Trovare l'ottimo in uno dei spigoli/angoli **(Vertice)**
 >4. Il punto è ottenibile tramite intersezione fra 2 rette
 >    - Metto a sistema le 2 rette (Con uguaglianza)
 >    - Semplice sistema a 2 equazioni e 2 incognite (Risolvibile facilmente mettendolo in colonna)
@@ -76,7 +76,7 @@ $$
 >
 >Minimizzare è equivalente a Massimizzare con cambio di segno, e viceversa.
 >
->>***Generalmente si va a destra per massimizzare e sinistra per minimizzare***
+>>~~***Generalmente si va a destra per massimizzare e sinistra per minimizzare***~~
 
 >[!tip]
 >Utilizzo del gradiente(Derivata parziale nelle 2 componenti) nel metodo grafico:
