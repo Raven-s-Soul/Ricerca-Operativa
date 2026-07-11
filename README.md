@@ -34,7 +34,7 @@
 >    - Minimo albero ricoprente
 >
 >
-> 1. [Teoria della dualità](Esonero%20II/Teoria%20della%20dualità.md)
+> 1. [Teoria della dualità](Esonero%20I/Teoria%20della%20dualità.md)
 >    - Costruzione del problema duale
 >    - Teorema fondamentale della PL
 >    - Condizioni di complementarità
