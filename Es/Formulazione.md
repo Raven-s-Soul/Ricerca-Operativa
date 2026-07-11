@@ -50,7 +50,7 @@ $$
 \begin{gather}
 \text{Vincoli di Domanda} \\
 \begin{cases}
-240x_CA + 600x_CB + 100x_CC \geq 10.000\\
+240x_CA + 600x_CB + 1000x_CC \geq 10.000\\
 190x_MA + 450x_MB + 750x_MC \geq 8.000\\
 120x_SA + 300x_SB + 600x_SC \geq 6.000\\
 \end{cases}
