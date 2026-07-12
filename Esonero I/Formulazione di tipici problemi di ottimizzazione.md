@@ -17,3 +17,11 @@ $$
 \text {Dove} \quad E2 \quad \text {e} \quad E4 \quad \text {sono errori in eccesso}
 \end{gather}
 $$
+
+
+### Allocazione di risorse
+### Gestione delle scorte
+### Taglio ottimo
+### Assegnazione
+### Pianificazione di attività
+### Il Problema del Trasporto
