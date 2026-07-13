@@ -12,8 +12,44 @@ ESERCIZIO D'ESAME: FORMULAZIONE L’azienda agricola L’orto stellato deve forn
 
 All’orto stellato, la produzione di ogni cassetta costa 0.84 € cad. Scrivere la formulazione per il problema preso in esame in cui vengono minimizzati i costi dell’azienda. Indicare la tipologia di formulazione utilizzata, il significato di ogni variabile e di ogni vincolo inserito.
 
+$$
+\begin{gather}
+\text{Dati} \\
+\begin{cases}
+480kg \quad c\\
+420kg \quad z\\
+260kg \quad p\\
+\end{cases}
+\\
+\begin{cases}
+S_1 = 4c + 4z + 2p \\
+S_2 = 5c + 2z + 3p \\
+S_3 = 3c + 5z + 2p \\
+S_4 = 6c + 1z + 3p
+\end{cases}
+\end{gather}
+$$
 
+$$
+\begin{gather}
+\text{Vincoli} \\
+\begin{cases}
+4S_1 + 5S_2 + 3S_3 + 6S_4 \geq 480\\
+4S_1 + 2S_2 + 5S_3 + 1S_4 \geq 420\\
+2S_1 + 3S_2 + 2S_3 + 3S_4 \geq 260\\
+\end{cases}
+\\
+\begin{cases}
+S_1,S_2,S_3,S_4 \geq 0 \text { e interi}
+\end{cases}
+\end{gather}
+$$
 
+$$
+\begin{gather}
+min \quad 0.84(S_1 + S_2 + S_3 + S_4)
+\end{gather}
+$$
 
 
 ***
