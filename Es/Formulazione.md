@@ -1,6 +1,23 @@
 # Es di Formulazione
 
 >[!NOTE]
+>### Esonero E del 28 Novembre
+
+ESERCIZIO D'ESAME: FORMULAZIONE L’azienda agricola L’orto stellato deve fornire ogni settimana alla Grande Distribuzione Organizzata (GDO) almeno 480 kg carote, 420 kg di zucchine e 260 kg di peperoni. Per ragioni commerciali, la GDO accetta dai suoi fornitori solo cassette da 10 kg che seguono specifici standard di composizione, stabiliti per contratto. Ogni riga della tabella di seguito specifica uno standard accettato:
+
+    Standard 1: 4 kg Carote, 4 kg Zucchine, 2 kg Peperoni
+    Standard 2: 5 kg Carote, 2 kg Zucchine, 3 kg Peperoni
+    Standard 3: 3 kg Carote, 5 kg Zucchine, 2 kg Peperoni
+    Standard 4: 6 kg Carote, 1 kg Zucchine, 3 kg Peperoni
+
+All’orto stellato, la produzione di ogni cassetta costa 0.84 € cad. Scrivere la formulazione per il problema preso in esame in cui vengono minimizzati i costi dell’azienda. Indicare la tipologia di formulazione utilizzata, il significato di ogni variabile e di ogni vincolo inserito.
+
+
+
+
+
+***
+>[!NOTE]
 >### Esame_Febbraio26_B 
 
 ESERCIZIO D'ESAME: FORMULAZIONE (Problema di Miscelazione) Un'azienda deve produrre conglomerati bituminosi partendo da 4 componenti in magazzino.
