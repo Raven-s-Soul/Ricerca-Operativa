@@ -68,9 +68,37 @@ $$
 
 ### Assegnazione
 
+>Questo è il caso classico in cui hai N risorse (es. 3 operai) e N compiti (es. 3 macchine), e devi assegnare esattamente 1 operaio a 1 macchina, minimizzando i costi o i tempi.
+>
+>Come si formula: Si imposta esattamente come il Problema del Trasporto.
+>
+>     Origini (Fornitori): Sono i tuoi operai, ma con una "disponibilità" fissa pari a 1.
+>     Destinazioni (Clienti): Sono le macchine, e ognuna ha una "domanda" fissa pari a 1.
+>
+>     Le Variabili: Hai sempre il doppio indice xij​, che vale 1 se l'operaio i viene assegnato alla macchina j, e 0 altrimenti.
+>
+> I Vincoli: Identici al trasporto. La somma delle assegnazioni che partono dall'operaio i deve essere uguale a 1 $(\sum x_{ij}​=1)$, e la somma delle assegnazioni che arrivano alla macchina j deve essere uguale a 1 $(\sum x_{ij}​=1)$.
+
 ***
 
-### Pianificazione di attività
+### Pianificazione di Attività / Turnazioni
+
+>Come si formula (Esempio del Centro Odontoiatrico): Il testo dice che devi assumere dei medici per coprire le prenotazioni dei pazienti.
+>
+>Un medico lavora 5 ore al giorno (300 minuti).
+>
+>Le richieste sono, ad esempio, 100 Ablazioni del Tartaro (AT) da 30 minuti ciascuna e 40 Otturazioni (OMP) da 45 minuti ciascuna.
+>
+>Obiettivo: Minimizzare il personale assunto $(\text{min} x\text{AT}​+ x\text{OMP}​+...)$
+>
+>Le Variabili: Invece di assegnare i pazienti, la variabile xj​ indica il numero di medici assegnati esclusivamente al servizio j (es. xAT​ sono i medici che faranno solo ablazioni).
+>
+>La trappola (Vincoli di Copertura): Devi usare il simbolo $\geq$ per assicurarti che i minuti totali erogati dai medici assunti riescano a coprire i minuti richiesti da tutti i pazienti.
+>
+>      Fabbisogno per le AT: 100 pazienti × 30 min = 3000 minuti di lavoro necessari.
+>      Vincolo AT: 300⋅xAT​≥3000
+>      (ovvero: i 300 minuti lavorati da ogni medico assegnato alle AT,
+>      moltiplicati per il numero di medici assunti, devono coprire il fabbisogno).
 
 ***
 
