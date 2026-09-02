@@ -64,6 +64,7 @@ $$
 >    - Prendo 2 punti e traccio la retta
 >    - Capire se ci interessa il sopra o quale lato del semipiano ci interessa
 >        - Per esempio basta prendere un punto qualsiasi non della retta e capire se soddisfa la diseguazione
+>        - Alternativa usare il gradiente è se $\geq$ cancelliamo la direzione opposta al gradiente o viceversa.
 >2. Ripeto per tutti vincoli
 >    - Fino a ottenere il poliedro delle soluzioni ammissibili
 >3. Trovare l'ottimo in uno dei spigoli/angoli **(Vertice)**
