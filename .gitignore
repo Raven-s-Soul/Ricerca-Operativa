@@ -1,0 +1,31 @@
+# --- PDF di lezioni/slide e materiale pesante (sorgente OCR, mai in commit) ---
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# --- File temporanei del workflow OCR/estrazione ---
+_tmp_*
+*_full.txt
+*_extract*.txt
+*_ocr*.txt
+ocr_out/
+
+# --- Python (script di supporto) ---
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# --- Cache editor / OS ---
+.obsidian/workspace*
+.vscode/
+*.tmp
+Thumbs.db
+.DS_Store
+
+# --- Log ---
+*.log
